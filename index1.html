@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    <link rel="stylesheet" href="style1.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+     
+     
+    <section>
+        <img src="/parallax/first.jpg" id="first" alt="first">
+        <img src="/parallax/last.png" id="last" alt="last">
+        <h1 id="text">Parallax</h1>
+    </section>
+
+    <div class="ab-text">
+        <div class="heading">
+            <h2>Photography</h2>
+            <p> As a freelancer designer & Developer, I am here to make you stand out in the Digital World<br>and my passion for design and your vision will ensure a great end result.  </p>
+
+
+        </div>
+        <div class="container">
+            <div class="box box1">
+                <div class="in">
+                    <p>Lake</p>
+                </div>
+            </div>
+            <div class="box box2">
+                <div class="in">
+                    <p>Forest</p>
+                </div>
+            </div>
+            <div class="box box3">
+                <div class="in">
+                    <p>Mountain</p>
+                </div>
+            </div>
+            <div class="box box4">
+                <div class="in">
+                    <p>Ranch House</p>
+                </div>
+            </div>
+            <div class="box box5">
+                <div class="in">
+                    <p>Himalayas</p>
+                </div>
+            </div>
+            <div class="box box6">
+                <div class="in">
+                    <p>Rhododendron</p>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="bottom">
+            <p> © 2024©  Design By Binay Kushwaha</p>
+
+        </div>
+
+    </div>
+    <script>
+        let first = document.getElementById("first");
+        let last = document.getElementById("last");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function(){
+            var value = window.scrollY;
+
+            first.style.top = value * 0.7 + 'px';
+            last.style.bottom = value * 0.5 + 'px';
+            text.style.top = value * 1 + 'px';
+        })
+    </script>
+</body>
+</html>
